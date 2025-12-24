@@ -1,0 +1,105 @@
+Important HTML Topics with Interview Questions
+
+Topics:
+1. Semantic HTML:
+
+    Semantic HTML uses meaningful tags to describe the structure and purpose of web content.
+
+    Example semantic tags:
+    <header>, <footer>, <main>, <nav>, <section>, <article>, <aside>, <figure>, <figcaption>, <time>
+
+    Why it's used (short):
+
+    Improves SEO
+
+    Improves accessibility (screen readers)
+
+    Cleaner structure
+
+    Easier maintenance
+
+
+
+2. HTML5 Structural Elements:
+    HTML5 structural elements like <header>, <nav>, <main>, <section>, <article>, <aside>, and <footer>
+    give meaning and structure to a webpage. They improve SEO, accessibility,
+    and help browsers and developers understand the layout better compared to using only <div> tags.
+
+3. Forms & Form Validation:
+    Forms are used to collect user input on a webpage. HTML5 introduced new form elements and attributes for 
+    better validation and user experience.
+
+4. Input Types (email, number, date, file, etc.)
+    HTML5 introduced new input types like email, number, date, file, etc. for better validation and user experience.
+
+5. Accessibility (ARIA roles)
+    ARIA roles are used to define the role of an element on a webpage. They improve accessibility for screen readers.
+        ARIA roles improve accessibility by helping screen readers understand elements.
+        - role="button" makes a non-button act like a button.
+        aria-label adds a text label to icons or elements without visible text.
+        aria-expanded tells whether a dropdown is open or closed.
+        aria-controls links a button to the element it controls.
+        aria-live announces dynamic content updates automatically.
+
+6. SEO Basics (meta tags, title, description)
+    Meta tags provide information about the webpage (like charset, SEO, responsiveness) and do not appear on the page.
+
+7. Canvas & Multimedia Tags
+    Canvas is used to draw graphics on a webpage. Multimedia tags like <audio> and <video> are used to add audio and video to a webpage.
+
+8. HTML DOM Structure
+  The HTML DOM is a tree-like structure of a webpage where each element becomes a node that JavaScript can access and modify.
+
+9. Difference Between Block, Inline, Inline-Block:
+    Block: Starts on a new line and takes full width.
+    Inline: Stays in the same line and ignores width/height.
+    Inline-block: Stays in the same line but allows width/height.
+
+10. Attributes vs Properties
+    Attributes are defined in the HTML markup, while properties are defined in the DOM.
+        Attribute = what you write in HTML
+        Property = what JavaScript can change while the page is running
+
+11. LocalStorage vs SessionStorage vs Cookies:
+    LocalStorage:
+        Stores data permanently until manually deleted.
+        Capacity: ~5MB.
+        Not sent to server automatically.
+
+    SessionStorage:
+        Stores data only for the current tab session.
+        Deletes when tab is closed.
+        Not sent to server.
+
+    Cookies:
+        Small data stored with an expiration time and sent to the server with every request.
+        Capacity: ~4KB.
+        Used for authentication
+        
+12.Difference Between HTML vs HTML5:
+    HTML is the older markup language, while HTML5 is the updated version with better semantics, 
+    built-in audio/video support, canvas for graphics, improved forms, localStorage/sessionStorage, 
+    and new APIs. HTML5 removes the need for plugins like Flash and makes pages more accessible and 
+    SEO-friendly.
+
+13.What is <!DOCTYPE html>, what are meta tags, and what does UTF-8 mean?
+    <!DOCTYPE html> tells the browser to use HTML5 standards mode.
+    Meta tags provide information about the webpage (like charset, SEO, responsiveness) and do not appear on the page.
+    UTF-8 is a character encoding that supports all languages, symbols, and emojis.
+
+Interview Questions:
+1. What is semantic HTML and why is it important?
+2. What are the new semantic tags introduced in HTML5?
+3. What is the difference between <section>, <article>, and <div>?
+4. Explain the difference between id and class attributes.
+5. What is the purpose of the <!DOCTYPE html> declaration?
+6. What are ARIA roles and why are they used?
+7. What is the difference between GET and POST in HTML forms?
+8. How do you make a webpage accessible?
+9. What are meta tags? Name the most important ones for SEO.
+10. Explain the difference between localStorage, sessionStorage, and cookies.
+11. What is the difference between block-level and inline-level elements?
+12. What does the 'defer' and 'async' attribute do in script tags?
+13. How does the browser parse and render HTML?
+14. What is the use of <canvas> tag?
+15. What is the difference between <link> and <script> placement in head vs body?
