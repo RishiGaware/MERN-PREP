@@ -1,0 +1,645 @@
+
+DAY 2 — CSS CORE (COMPLETE NOTES + INTERVIEW QUESTIONS)
+
+==================================================
+1. CSS FUNDAMENTALS
+==================================================
+What is CSS?
+- CSS stands for Cascading Style Sheets
+- Used to style HTML, control layout, design, responsiveness, and user experience
+
+Ways to Apply CSS
+- Inline CSS (style attribute)
+- Internal CSS (<style> tag)
+- External CSS (recommended)
+
+      1. Inline CSS:
+        <p style="color: red;">Error message</p>
+
+      2. Internal CSS:
+        <style>
+          p {
+            color: red;
+          }
+        </style>
+        or
+          <style>
+            .login-btn { background: green; color: white; }
+          </style>
+
+          <button class="login-btn">Login</button>
+
+      3. External CSS:
+        <link rel="stylesheet" href="styles.css">
+
+CSS Syntax
+selector {
+  property: value;
+}
+
+Possible Interview Questions:
+- What is CSS and why is it used?
+  answer: CSS is used to style HTML, control layout, design, responsiveness, and user experience
+
+- Difference between inline, internal, and external CSS?
+  answer: Inline CSS is applied directly to an element using the style attribute. Internal CSS is defined within a <style> tag in the HTML document. External CSS is stored in a separate .css file and linked to the HTML document using the <link> tag.
+
+- Which CSS method is best and why?
+  answer: External CSS is recommended as it provides better organization, reusability, and maintainability.
+
+==================================================
+2. CSS SELECTORS
+==================================================
+Basic Selectors
+- Universal selector (*)
+  example: * { margin: 0; padding: 0; }
+
+- Element selector (div, p)
+  example: div { background-color: #f0f0f0; }
+
+- Class selector (.class)
+  example: .btn { background-color: green; color: white; }
+  
+- ID selector (#id)
+  example: #header { background-color: #333; color: white; }
+
+Combinators
+- Group selector (h1, h2)
+  example: h1, h2 { font-size: 24px; }
+
+- Descendant selector (div p)
+  example: div p { color: blue; }
+
+- Child selector (div > p)
+  example: div > p { font-weight: bold; }
+
+- Adjacent sibling (h1 + p)
+  example: h1 + p { margin-top: 10px; }
+
+- General sibling (h1 ~ p)
+  example: h1 ~ p { margin-top: 20px; }
+
+Attribute Selectors
+- [type="text"]
+  example: input[type="text"] { width: 200px; }
+
+- [disabled]
+  example: input:disabled { background-color: #ccc; }
+
+- [class^="btn"]
+  example: [class^="btn"] { padding: 10px; }
+
+- [class$="primary"]
+  example: [class$="primary"] { color: white; }
+
+Interview Questions:
+- What are CSS selectors?
+  answer: CSS selectors are used to select and style HTML elements.
+
+- Difference between class and id?
+  answer: Class is used to select multiple elements with the same class name, while id is used to select a single element with a unique id.
+
+- What is a descendant selector?
+  answer: A descendant selector is used to select elements that are nested within other elements.
+
+- Attribute selector use cases?
+  answer: Attribute selectors are used to select elements based on their attributes, such as type, class, or id.
+
+==================================================
+3. CSS SPECIFICITY & CASCADE
+==================================================
+Specificity Order
+- Universal selector
+  example: * { margin: 0; padding: 0; }
+
+- Element selector
+  example: div { background-color: #f0f0f0; }
+
+- Class / attribute / pseudo-class
+  example: .btn { background-color: green; color: white; }
+
+- ID selector
+  example: #header { background-color: #333; color: white; }
+
+- Inline styles
+  example: <p style="color: red;">Error message</p>
+
+- !important
+  example: p { color: blue !important; }
+
+Cascade Rules
+- Importance
+- Specificity
+- Source order
+
+Interview Questions:
+- Explain CSS specificity
+  answer: CSS specificity is a measure of how specific a selector is in a CSS rule. It is used to determine which style rule takes precedence when multiple rules apply to the same element.
+
+- How is priority decided in CSS?
+  answer: Priority is determined by the specificity of the selector, with more specific selectors taking precedence over less specific selectors.
+  example:
+
+- Why !important should be avoided?
+  answer: !important should be avoided as it can make debugging difficult and can lead to unexpected behavior.
+
+- Inline vs external CSS priority?
+  answer: Inline styles have the highest priority, followed by internal styles, then external styles.
+
+==================================================
+4. CSS BOX MODEL
+==================================================
+Components
+- Content
+  example: div { width: 200px; height: 200px; padding: 10px; border: 2px solid #000; margin: 20px; }
+
+- Padding
+  example: div { padding: 10px; }
+
+- Border
+  example: div { border: 2px solid #000; }
+
+- Margin
+  example: div { margin: 20px; }
+
+Box Sizing
+- content-box (default)
+  example: div { box-sizing: content-box; }
+
+- border-box (recommended)
+  example: div { box-sizing: border-box; }
+
+Advanced Concepts
+- Margin collapsing
+- Negative margins
+
+Interview Questions:
+- Explain the CSS box model
+  answer: The CSS box model is a way of representing an HTML element as a box, with content, padding, border, and margin.
+
+- Difference between margin and padding?
+  answer: Margin is the space outside the border, while padding is the space inside the border.
+
+- Why use box-sizing: border-box?
+  answer: box-sizing: border-box is used to include padding and border in the element's total width and height.
+
+- What is margin collapsing?
+  answer: Margin collapsing is the process where two or more margins combine into a single margin.
+
+==================================================
+5. DISPLAY & VISIBILITY
+==================================================
+Display Types
+- block
+  example: div { display: block; }
+
+- inline
+  example: span { display: inline; }
+
+- inline-block
+  example: div { display: inline-block; }
+
+- none
+  example: div { display: none; }
+
+- flex
+  example: div { display: flex; }
+
+- grid
+  example: div { display: grid; }
+
+Visibility
+- visible
+- hidden
+
+Interview Questions:
+- display:none vs visibility:hidden?
+- inline vs inline-block?
+- block vs inline?
+
+==================================================
+6. CSS UNITS
+==================================================
+Absolute Units
+- px
+  example: div { width: 200px; }
+- pt
+  example: div { width: 200pt; }
+- cm, mm
+  example: div { width: 200cm; }
+
+Relative Units
+- %
+  example: div { width: 50%; }
+- em
+  example: div { width: 2em; }
+- rem
+  example: div { width: 2rem; }
+- vw, vh
+  example: div { width: 50vw; }
+- vmin, vmax
+  example: div { width: 50vmin; }
+
+Best Practices
+- Typography: rem
+  example: body { font-size: 16px; }
+
+- Layout: %, vw, vh
+  example: div { width: 50vw; }
+
+Interview Questions:
+- px vs rem?
+  answer: px is an absolute unit, while rem is a relative unit.
+
+- em vs rem?
+  answer: em is a relative unit, while rem is a relative unit.
+
+- Which unit is best for responsive design?
+  answer: rem is best for responsive design.
+
+==================================================
+7. TYPOGRAPHY
+==================================================
+Font Properties
+- font-family
+  example: body { font-family: 'Arial', sans-serif; }
+
+- font-size
+  example: body { font-size: 16px; }
+
+- font-weight
+  example: body { font-weight: bold; }
+
+- line-height
+  example: body { line-height: 1.5; }
+
+Text Properties
+- color
+  example: body { color: #333; }
+
+- text-align
+  example: body { text-align: center; }
+
+- text-transform
+  example: body { text-transform: uppercase; }
+
+- text-decoration
+  example: body { text-decoration: underline; }
+
+- letter-spacing
+  example: body { letter-spacing: 2px; }
+
+- white-space
+  example: body { white-space: nowrap; }
+
+- text-overflow
+  example: body { text-overflow: ellipsis; }
+
+Interview Questions:
+- line-height importance?
+  answer: line-height is important for readability.
+
+- How to truncate text?
+  answer: text-overflow: ellipsis is used to truncate text.
+
+- Difference between text-align and vertical-align?
+  answer: text-align is used to align text horizontally, while vertical-align is used to align text vertically.
+
+==================================================
+8. COLORS & BACKGROUNDS
+==================================================
+Color Formats
+- HEX
+  example: body { color: #333; }
+
+- RGB / RGBA
+  example: body { color: rgb(255, 255, 255); }
+
+- HSL / HSLA
+  example: body { color: hsl(0, 100%, 50%); }
+
+Background Properties
+- background-color
+  example: body { background-color: #333; }
+
+- background-image
+  example: body { background-image: url('image.jpg'); }
+
+- background-size
+  example: body { background-size: cover; }
+
+- background-position
+  example: body { background-position: center; }
+
+- background-repeat
+  example: body { background-repeat: no-repeat; }
+
+Interview Questions:
+- RGBA vs opacity?
+  answer: opacity is used to make an element transparent, while rgba is used to set the alpha channel of a color.
+
+- Linear vs radial gradient?
+  answer: linear-gradient creates a gradient that flows horizontally or vertically, while radial-gradient creates a gradient that flows from a center point.
+
+- background-size cover vs contain?
+  answer: cover scales the background to cover the entire element, while contain scales the background to fit within the element.
+
+==================================================
+9. BORDERS & OUTLINES
+==================================================
+Borders
+- border-width
+  example: body { border-width: 1px; }
+
+- border-style
+  example: body { border-style: solid; }
+
+- border-color
+  example: body { border-color: #333; }
+
+- border-radius
+  example: body { border-radius: 5px; }
+
+Outline
+- outline
+  example: body { outline: 1px solid #333; }
+
+- outline-offset
+  example: body { outline-offset: 5px; }
+
+Interview Questions:
+- Border vs outline?
+  answer: border is used to create a border around an element, while outline is used to create an outline around an element.
+
+- border-radius use cases?
+  answer: border-radius is used to create rounded corners on an element.
+
+==================================================
+10. SPACING & ALIGNMENT
+==================================================
+- Margin & padding shorthand
+  example: body { margin: 10px; padding: 10px; }
+
+- text-align
+  example: body { text-align: center; }
+
+- vertical-align
+  example: body { vertical-align: center; }
+
+- Centering techniques
+  example: body { text-align: center; }
+
+Interview Questions:
+- How to center a div?
+  answer: text-align: center is used to center a div.
+
+- Margin auto usage?
+  answer: margin: auto is used to center an element.
+
+==================================================
+11. POSITIONING
+==================================================
+Position Types
+- static
+  example: body { position: static; }
+
+- relative
+  example: body { position: relative; }
+
+- absolute
+  example: body { position: absolute; }
+
+- fixed
+  example: body { position: fixed; }
+
+- sticky
+  example: body { position: sticky; }
+
+Other Properties
+- top, left, right, bottom
+  example: body { top: 10px; left: 10px; }
+
+- z-index
+  example: body { z-index: 1; }
+
+Interview Questions:
+- relative vs absolute?
+  answer: relative is used to position an element relative to its normal position, while absolute is used to position an element relative to the nearest positioned ancestor.
+
+- Why z-index not working?
+  answer: z-index is used to control the stack order of an element, but it only works on positioned elements.
+
+- sticky vs fixed?
+  answer: sticky is used to create a sticky element, while fixed is used to create a fixed element.
+
+==================================================
+12. OVERFLOW
+==================================================
+- overflow
+  example: body { overflow: hidden; }
+
+- overflow-x
+  example: body { overflow-x: hidden; }
+
+- overflow-y
+  example: body { overflow-y: hidden; }
+
+Values
+- hidden
+- scroll
+- auto
+
+Interview Questions:
+- overflow hidden use case?
+  answer: overflow hidden is used to hide any content that overflows the element.
+
+- scroll vs auto?
+  answer: scroll is used to create a scrollable element, while auto is used to create an element that is scrollable if the content overflows.
+
+==================================================
+13. FLEXBOX (INTRO)
+==================================================
+- display: flex
+  example: body { display: flex; }
+
+- flex-direction
+  example: body { flex-direction: row; }
+
+- justify-content
+  example: body { justify-content: center; }
+
+- align-items
+  example: body { align-items: center; }
+
+- flex-wrap
+  example: body { flex-wrap: wrap; }
+
+- gap
+  example: body { gap: 10px; }
+
+Interview Questions:
+- Main axis vs cross axis?
+  answer: main axis is the primary axis of a flex container, while cross axis is the secondary axis of a flex container.
+
+- justify-content vs align-items?
+  answer: justify-content is used to align items horizontally, while align-items is used to align items vertically.
+
+==================================================
+14. UI EFFECTS & INTERACTIONS
+==================================================
+Pseudo-classes
+- :hover
+  example: body { :hover { color: red; } }
+
+- :focus
+  example: body { :focus { color: red; } }
+
+- :active
+  example: body { :active { color: red; } }
+
+- :checked
+  example: body { :checked { color: red; } }
+
+Pseudo-elements
+- ::before
+  example: body { ::before { content: "Hello"; } }
+
+- ::after
+  example: body { ::after { content: "Hello"; } }
+
+- ::placeholder
+  example: body { ::placeholder { color: red; } }
+
+Interview Questions:
+- Difference between pseudo-class and pseudo-element?
+  answer: pseudo-class is used to select elements based on their state, while pseudo-element is used to select parts of an element.
+
+- Use of ::before?
+  answer: ::before is used to insert content before the content of an element.
+
+==================================================
+15. SHADOWS & EFFECTS
+==================================================
+- box-shadow
+  example: body { box-shadow: 0 0 10px #333; }
+
+- text-shadow
+  example: body { text-shadow: 0 0 10px #333; }
+
+- opacity
+  example: body { opacity: 0.5; }
+
+- filter
+  example: body { filter: blur(5px); }
+
+Interview Questions:
+- opacity vs rgba?
+  answer: opacity is used to make an element transparent, while rgba is used to set the alpha channel of a color.
+
+- box-shadow syntax?
+  answer: box-shadow is used to create a shadow effect on an element.
+
+==================================================
+16. TRANSITIONS & ANIMATIONS
+==================================================
+Transitions
+- transition-property
+  example: body { transition-property: color; }
+
+- transition-duration
+  example: body { transition-duration: 1s; }
+
+- timing-function
+  example: body { transition-timing-function: ease-in-out; }
+
+Animations
+- @keyframes
+  example: @keyframes myAnimation { 0% { color: red; } 100% { color: blue; } }
+
+- animation-duration
+  example: body { animation-duration: 1s; }
+
+Interview Questions:
+- Transition vs animation?
+  answer: transition is used to animate changes to a property, while animation is used to animate a sequence of keyframes.
+
+- keyframes usage?
+  answer: keyframes is used to define a sequence of keyframes for an animation.
+
+==================================================
+17. FORMS & INPUT STYLING
+==================================================
+- input
+  example: body { input { border: 1px solid #333; } }
+
+- textarea
+  example: body { textarea { border: 1px solid #333; } }
+
+- select
+  example: body { select { border: 1px solid #333; } }
+
+- button
+  example: body { button { border: 1px solid #333; } }
+
+States
+- :focus
+- :disabled
+- ::placeholder
+
+Interview Questions:
+- How to style input focus?
+  answer: input:focus { border: 1px solid #333; }
+
+- Remove outline safely?
+  answer: input:focus { outline: none; }
+
+==================================================
+18. LAYOUT HELPERS
+==================================================
+- Centered layouts
+- Card UI
+- Login UI
+- Buttons
+- Responsive containers
+
+==================================================
+19. CSS RESET & NORMALIZATION
+==================================================
+- Browser default styles
+- CSS reset
+- Normalize.css
+- box-sizing reset
+
+Interview Questions:
+- Reset vs normalize?
+  answer: reset is used to remove all default styles, while normalize is used to normalize default styles.
+
+- Why reset CSS?
+  answer: reset CSS is used to remove all default styles, while normalize CSS is used to normalize default styles.
+
+==================================================
+20. DEBUGGING & BEST PRACTICES
+==================================================
+Debugging
+- DevTools
+- Inspect element
+- Overridden styles
+
+Best Practices
+- Avoid inline CSS
+- Avoid !important
+- Reusable classes
+- Consistent units
+- Naming conventions
+
+==================================================
+BONUS INTERVIEW QUESTIONS
+==================================================
+- How does CSS inheritance work?
+- Which properties are inherited?
+- How browsers render CSS?
+- Inline-block vs flex?
+- Margin collapse reason?
+- CSS performance best practices?
+
+END OF FILE

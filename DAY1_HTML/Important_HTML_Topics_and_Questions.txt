@@ -103,3 +103,73 @@ Interview Questions:
 13. How does the browser parse and render HTML?
 14. What is the use of <canvas> tag?
 15. What is the difference between <link> and <script> placement in head vs body?
+
+
+1. What is semantic HTML and why is it important?
+    Semantic HTML uses meaningful tags (<header>, <nav>, <section>) that describe content structure.
+    It improves SEO, accessibility, and code readability.
+
+2. What are the new semantic tags introduced in HTML5?
+    HTML5 introduced new semantic tags like <header>, <nav>, <main>, <section>, <article>, <aside>, <footer>, <figure>, <figcaption>, <time>.
+
+3. What is the difference between <section>, <article>, and <div>?
+    <section> is a generic container for content.
+    <article> is a self-contained piece of content.
+    <div> is a generic container for styling.
+
+4. Explain the difference between id and class attributes.
+    id is unique to an element.
+    class can be used on multiple elements.
+
+5. What is the purpose of the <!DOCTYPE html> declaration?
+    <!DOCTYPE html> tells the browser to use HTML5 standards mode.
+
+6. What are ARIA roles and why are they used?
+    ARIA roles define the role of an element on a webpage.
+    They improve accessibility for screen readers.
+
+7. What is the difference between GET and POST in HTML forms?
+    GET sends data as part of the URL.
+    POST sends data in the body of the request.
+
+8. How do you make a webpage accessible?
+    Use semantic HTML.
+    Add alt text to images.
+    Use ARIA roles.
+    Ensure proper contrast.
+    Use ARIA roles.
+
+9. What are meta tags? Name the most important ones for SEO.
+    Meta tags provide information about the webpage.
+    Most important for SEO: charset, description, keywords.
+    meta description
+    meta keywords (less relevant now)
+    meta charset="UTF-8"
+    meta viewport
+
+10. Explain the difference between localStorage, sessionStorage, and cookies.
+    localStorage: stores data permanently.
+    sessionStorage: stores data for the current session.
+    cookies: small data stored with an expiration time.
+
+11. What is the difference between block-level and inline-level elements?
+    Block-level: takes up full width, starts on a new line.
+    Inline-level: stays on the same line, ignores width/height.
+
+12. What does the 'defer' and 'async' attribute do in script tags?
+    defer: loads scripts after the DOM is fully loaded.
+    async: loads scripts as soon as they are available.
+
+13. How does the browser parse and render HTML?
+    Browser parses HTML from top to bottom.
+    It builds the DOM tree and applies CSS.
+    Then it renders the page.
+
+14. What is the use of <canvas> tag?
+    <canvas> is used for drawing graphics on a webpage.
+    It is often used with JavaScript for dynamic content.
+
+15. What is the difference between <link> and <script> placement in head vs body?
+    <link> in head: styles are loaded first.
+    <script> in head: scripts are loaded first.
+    <script> in body: scripts are loaded last.
