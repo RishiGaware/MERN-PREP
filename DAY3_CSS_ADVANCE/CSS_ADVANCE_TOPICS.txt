@@ -1,0 +1,121 @@
+CSS Study Plan – Day 3 & Day 4
+Day 3 – Responsive Design + Flexbox (26 Dec 2025)
+Topics Covered:
+- Flexbox deep dive: flex container and flex item properties
+- Alignment using Flexbox (main axis & cross axis)
+- Mobile-first responsive design approach
+- Media queries using min-width strategy
+
+Flexbox Properties:
+- display: flex
+ example: display: flex;
+
+- flex-direction
+ example: flex-direction: row;
+
+- justify-content
+ example: justify-content: center;
+
+- align-items
+ example: align-items: center;
+
+- align-content
+ example: align-content: center;
+
+- flex-wrap
+ example: flex-wrap: wrap;
+
+- gap
+ example: gap: 10px;
+
+- flex-grow, flex-shrink, flex-basis
+ example: flex-grow: 1;
+ example: flex-shrink: 1;
+ example: flex-basis: 100px;
+
+- order, align-self
+ example: order: 1;
+ example: align-self: center;
+
+Practice Task:
+- Build a responsive navbar with dropdown
+- Mobile view with hamburger menu
+- Desktop view with horizontal menu
+
+Interview Questions:
+1. Difference between Flexbox and Grid?
+example: Flexbox is a one-dimensional layout system, while Grid is a two-dimensional layout system.
+
+2. How do media queries work?
+example: Media queries are used to apply different styles based on the device's screen size.
+
+Day 4 – CSS Grid + Animations (27 Dec 2025)
+Topics Covered:
+- CSS Grid layout system (2D layout)
+- Grid templates, rows, columns, and alignment
+- CSS transitions and keyframe animations
+
+CSS Grid Properties:
+- display: grid
+ example: display: grid;
+
+- grid-template-columns
+ example: grid-template-columns: 1fr 1fr;
+
+- grid-template-rows
+ example: grid-template-rows: 1fr 1fr;
+
+- repeat()
+ example: repeat(2, 1fr);
+
+- fr unit
+ example: fr unit;
+
+- gap
+ example: gap: 10px;
+
+- grid-column, grid-row
+ example: grid-column: 1 / 2;
+ example: grid-row: 1 / 2;
+
+- place-items
+ example: place-items: center;
+
+- auto-fit vs auto-fill
+ example: auto-fit vs auto-fill;
+
+Animations:
+- transition
+ example: transition: all 0.5s ease-in-out;
+- transition-duration
+ example: transition-duration: 0.5s;
+- transition-timing-function
+ example: transition-timing-function: ease-in-out;
+- @keyframes
+ example: @keyframes example {
+    0% {background-color: red;}
+    50% {background-color: yellow;}
+    100% {background-color: green;}
+}
+- animation-name
+ example: animation-name: example;
+- animation-duration
+ example: animation-duration: 5s;
+- animation-iteration-count
+ example: animation-iteration-count: infinite;
+
+Practice Task:
+- Create an animated image gallery using CSS Grid
+example: 
+- Add hover effects with smooth transitions
+example: 
+
+
+Interview Questions:
+1. Difference between em and rem?
+
+example: em is a relative unit based on the font size of the parent element, while rem is a relative unit based on the font size of the root element.
+
+2. How to center items using CSS Grid?
+example: 
+

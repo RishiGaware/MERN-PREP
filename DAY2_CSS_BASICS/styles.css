@@ -1,0 +1,197 @@
+/* ==================================================
+   1. CSS RESET & NORMALIZATION
+================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==================================================
+   2. CSS FUNDAMENTALS & TYPOGRAPHY
+================================================== */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ==================================================
+   3. SELECTORS
+================================================== */
+
+/* Element selector */
+h2 {
+  margin-bottom: 10px;
+}
+
+/* Class selector */
+.title {
+  font-size: 2rem;
+}
+
+/* ID selector */
+#header {
+  background-color: #1f2937;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Attribute selector */
+input[type="text"] {
+  border-color: #2563eb;
+}
+
+/* Descendant selector */
+.card label {
+  font-size: 0.9rem;
+}
+
+/* ==================================================
+   4. LAYOUT – FLEXBOX
+================================================== */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+/* ==================================================
+   5. BOX MODEL
+================================================== */
+.card {
+  background: white;
+  width: 300px;
+  padding: 20px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+/* ==================================================
+   6. FORMS & INPUT STYLING
+================================================== */
+.form-group {
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+/* Focus pseudo-class */
+input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+/* Placeholder pseudo-element */
+input::placeholder {
+  color: #999;
+}
+
+/* ==================================================
+   7. BUTTONS + TRANSITIONS
+================================================== */
+.btn {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.primary {
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+/* Hover */
+.primary:hover {
+  background: #1e40af;
+}
+
+/* Disabled state */
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* ==================================================
+   8. DISPLAY & VISIBILITY
+================================================== */
+.inline {
+  display: inline;
+  background: #fde68a;
+}
+
+.inline-block {
+  display: inline-block;
+  width: 100px;
+  background: #a7f3d0;
+}
+
+.block {
+  display: block;
+  background: #bfdbfe;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* ==================================================
+   9. POSITIONING
+================================================== */
+.position-demo {
+  margin-top: 30px;
+}
+
+.relative-box {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background: #ddd;
+}
+
+.absolute-box {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #ef4444;
+  color: white;
+  padding: 5px;
+}
+
+/* ==================================================
+   10. SHADOWS & EFFECTS
+================================================== */
+.card {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* ==================================================
+   11. FIXED POSITION
+================================================== */
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #e5e7eb;
+  text-align: center;
+  padding: 10px;
+}
+
+/* ==================================================
+   12. OVERFLOW
+================================================== */
+.card {
+  overflow: hidden;
+}

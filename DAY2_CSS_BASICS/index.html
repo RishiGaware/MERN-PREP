@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Core – Day 2 Full Demo</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Internal CSS example -->
+  <style>
+    .internal-text {
+      color: purple;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Inline CSS example -->
+  <p style="color: red;">Inline CSS Example</p>
+
+  <header id="header">
+    <h1 class="title">CSS Core – Day 2</h1>
+    <p class="subtitle internal-text">All concepts covered with examples</p>
+  </header>
+
+  <main class="container">
+
+    <!-- BOX MODEL + CARD UI -->
+    <section class="card">
+      <h2>Login Form</h2>
+
+      <!-- FORMS & INPUT STYLING -->
+      <form>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="text" placeholder="Enter email" />
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter password" />
+        </div>
+
+        <button class="btn primary">Login</button>
+        <button class="btn secondary" disabled>Disabled</button>
+      </form>
+    </section>
+
+    <!-- DISPLAY & VISIBILITY -->
+    <section class="visibility-demo">
+      <span class="inline">Inline</span>
+      <span class="inline-block">Inline-Block</span>
+      <div class="block">Block</div>
+      <div class="hidden">Hidden (visibility)</div>
+    </section>
+
+    <!-- POSITIONING -->
+    <div class="position-demo">
+      <div class="relative-box">
+        Relative
+        <div class="absolute-box">Absolute</div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FIXED POSITION -->
+  <footer class="footer">
+    Fixed Footer
+  </footer>
+
+</body>
+</html>
